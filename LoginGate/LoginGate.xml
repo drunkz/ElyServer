@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <Server LogLevel="0"/>
+    <Socket ip="" port="6000"/>
+    <DBServer ip="127.0.0.1" port="3306" pool="10"/>
+    <LogDBServer ip="192.168.153.1" port="3306" pool="10"/>
+</Config>

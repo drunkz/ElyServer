@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <Server qu="1"/>
+    <!--
+        Log等级说明：         0-INFO    1-WARNING    2-ERROR    3-FATAL
+        name                日志文件的名称前缀
+        directory           日志文件所保存的文件夹名
+        minloglevel         低于此级别的日志将被忽略，默认0
+        logtostderr         是否只输出到控制台，0为仅输出到文件(alsologtostderr为0时)，1为仅输出到控制台，默认0
+        alsologtostderr     是否输出到控制台，0为仅输出到文件，1为都输出，默认0
+        max_log_size        单个日志文件最大大小(MB)
+        stderrthreshold     大于等于此等级的日志仅写出到文件(alsologtostderr为1时此值无效)，默认2
+        logbuflevel         小于等于此等级的日志将缓冲输出，大于此等级的立即输出
+        logbufsecs          缓冲最大秒数，0为实时输出
+    -->
+    <Log name="DBServer" directory="log" minloglevel="0" logtostderr="0" alsologtostderr="1"
+         max_log_size="10" stderrthreshold="2" logbuflevel="1" logbufsecs="10"/>
+    <Socket ip="" port="6000"/>
+    <Database ip="127.0.0.1" port="3306" dbname="ely" username="debian-sys-maint" password="BvkxCh1srGqDPh0O" pool="10"/>
+    <LogDBServer ip="192.168.153.1" port="3306" pool="10"/>
+</Config>
